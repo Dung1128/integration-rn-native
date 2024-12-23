@@ -24,6 +24,8 @@
 		2E4E63DF2D1412D70080635E /* ReactNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E63DE2D1412D70080635E /* ReactNativeView.swift */; };
 		2E4E63E12D14141E0080635E /* ReactNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E63E02D14141E0080635E /* ReactNativeViewController.swift */; };
 		2E4E63E32D1414460080635E /* ReactNativeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E63E22D1414460080635E /* ReactNativeScreen.swift */; };
+		2E4E63E52D1900A90080635E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E63E42D1900A80080635E /* AppDelegate.swift */; };
+		2E4E63E72D1901250080635E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E63E62D1901250080635E /* SceneDelegate.swift */; };
 		2EB7E2182CDDA45F00B3C9BD /* BaseCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7E2172CDDA45F00B3C9BD /* BaseCryptoApp.swift */; };
 		2EB7E21A2CDDA45F00B3C9BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB7E2192CDDA45F00B3C9BD /* ContentView.swift */; };
 		2EB7E21C2CDDA46100B3C9BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB7E21B2CDDA46100B3C9BD /* Assets.xcassets */; };
@@ -86,6 +88,9 @@
 		2E4E63DE2D1412D70080635E /* ReactNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeView.swift; sourceTree = "<group>"; };
 		2E4E63E02D14141E0080635E /* ReactNativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeViewController.swift; sourceTree = "<group>"; };
 		2E4E63E22D1414460080635E /* ReactNativeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeScreen.swift; sourceTree = "<group>"; };
+		2E4E63E42D1900A80080635E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E4E63E62D1901250080635E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E4E63E82D1901D30080635E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2EB7E2142CDDA45F00B3C9BD /* BaseCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB7E2172CDDA45F00B3C9BD /* BaseCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCryptoApp.swift; sourceTree = "<group>"; };
 		2EB7E2192CDDA45F00B3C9BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,12 +181,15 @@
 		2EB7E2162CDDA45F00B3C9BD /* BaseCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				2E4E63E82D1901D30080635E /* Info.plist */,
 				2EB7E26A2CDF012D00B3C9BD /* Ultilities */,
 				2EB7E2652CDE0EE500B3C9BD /* Services */,
 				2EB7E25A2CDDB8C500B3C9BD /* Models */,
 				2EB7E24D2CDDAD1D00B3C9BD /* Core */,
 				2EB7E2412CDDA70900B3C9BD /* Extensions */,
 				2EB7E2172CDDA45F00B3C9BD /* BaseCryptoApp.swift */,
+				2E4E63E62D1901250080635E /* SceneDelegate.swift */,
+				2E4E63E42D1900A80080635E /* AppDelegate.swift */,
 				2E4E63E02D14141E0080635E /* ReactNativeViewController.swift */,
 				2E4E63E22D1414460080635E /* ReactNativeScreen.swift */,
 				2E4E63DE2D1412D70080635E /* ReactNativeView.swift */,
@@ -592,12 +600,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4E63E52D1900A90080635E /* AppDelegate.swift in Sources */,
 				2E1E2D462CF077A300BE9317 /* PortfolioContainer.xcdatamodeld in Sources */,
 				2E2EF1F42CE20C0E00B60C4D /* StatisticModel.swift in Sources */,
 				2EB7E2672CDE0F2500B3C9BD /* CoinDataService.swift in Sources */,
 				2EB7E2602CDDC0AB00B3C9BD /* CoinRowView.swift in Sources */,
 				2E2EF2002CE44BBE00B60C4D /* XMarkButton.swift in Sources */,
 				2EB7E2642CDDF71A00B3C9BD /* HomeViewModel.swift in Sources */,
+				2E4E63E72D1901250080635E /* SceneDelegate.swift in Sources */,
 				2EB7E21A2CDDA45F00B3C9BD /* ContentView.swift in Sources */,
 				2E10F9492CE19F0D00AA7B10 /* LocalFileManager.swift in Sources */,
 				2E4E63E32D1414460080635E /* ReactNativeScreen.swift in Sources */,
@@ -797,8 +807,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaseCrypto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -826,8 +836,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaseCrypto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (

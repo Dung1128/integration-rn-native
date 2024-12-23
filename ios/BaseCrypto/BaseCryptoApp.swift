@@ -11,10 +11,11 @@ import React
 
 @main
 struct BaseCryptoApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 //    var bridge: RCTBridge?
    
     
-    @StateObject private var vm = HomeViewModel()
+//    @StateObject private var vm = HomeViewModel()
     
     init(){
        

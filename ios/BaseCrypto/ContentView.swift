@@ -26,6 +26,19 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .cornerRadius(8)
                         }
+                        NavigationLink(
+                            destination: ReactNativeScreen(
+                                moduleName: "Home",
+                                initialProps: ["message": "Hello from SwiftUI to SecondScreen"]
+                            )
+                        ) {
+                            Text("Go to Home React Native Screen")
+                                .padding()
+                                .background(Color.green)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
+                        .padding()
                     }
                     .navigationTitle("SwiftUI to React Native")
                 }
